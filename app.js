@@ -15,10 +15,6 @@ function changeColors(color) {
 
     const agradecimento = document.querySelector(".lermais__agradecimento span");
     agradecimento.style.color = color;
-
-    const header = document.querySelector(".circle ul li a");
-    header.style.color = color;
-
 }
 
 function exibirParagrafo() {
