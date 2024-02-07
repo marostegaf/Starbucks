@@ -202,8 +202,8 @@ header ul li a:hover {
   }
 
   section {
-    width: 97%;
-    min-height: 97vh;
+    width: 100%;
+    min-height: 100vh;
     padding: 100px;
   }
 
@@ -320,6 +320,282 @@ header ul li a:hover {
 
   .lermais__agradecimento span {
     font-size: 30px;
+    color: #017143;
+    font-weight: 600;
+  }
+
+  header ul li a:hover {
+    transform: translateY(-3px);
+    color: #000;
+  }
+}
+
+@media (max-width: 1300px) {
+  section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  header {
+    padding: 15px 50px;
+  }
+
+  .logo {
+    max-width: 70px;
+  }
+
+  header ul li a {
+    font-size: 20px;
+  }
+
+  .content .textBox h2 {
+    color: #333;
+    font-size: 2.1em;
+    line-height: 1.4em;
+    font-weight: 500;
+  }
+
+  .content .textBox p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10%;
+  }
+
+  .content .textBox a {
+    display: inline-block;
+    margin-top: 0;
+    padding: 8px 25px;
+    background-color: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .content .textBox {
+    max-width: 400px;
+  }
+
+  .content .imgBox {
+    left: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-top: 100px;
+  }
+
+  .content .imgBox img {
+    max-width: 300px;
+  }
+
+  .thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .thumb li:hover {
+    transform: translateY(-15px);
+  }
+
+  .thumb li img {
+    max-width: 70px;
+  }
+
+  .sci {
+    position: absolute;
+    top: 75%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sci li {
+    font-size: 40px;
+  }
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(600px at right 1000px);
+  }
+
+  .lermais__link {
+    font-size: 1em;
+  }
+
+  .lermais__agradecimento {
+    margin-top: 2%;
+  }
+
+  .lermais__agradecimento span {
+    font-size: 20px;
+    color: #017143;
+    font-weight: 600;
+  }
+
+  header ul li a:hover {
+    transform: translateY(-3px);
+    color: #000;
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    position: relative;
+    width: 97%;
+    height: auto;
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  header {
+    padding: 15px 25px;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .logo {
+    max-width: 50px;
+  }
+
+  header ul li a {
+    font-size: 15px;
+  }
+
+  .content {
+    position: none;
+    width: 100%;
+    display: block;
+  }
+
+  .content .textBox h2 {
+    color: #333;
+    font-size: 1.7em;
+    line-height: 1.4em;
+    font-weight: 500;
+  }
+
+  .content .textBox p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10%;
+  }
+
+  .content .textBox a {
+    display: inline-block;
+    margin-top: 0;
+    padding: 8px 25px;
+    background-color: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .content .textBox {
+    max-width: auto;
+  }
+
+  .content .imgBox {
+    left: 95%;
+    width: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-top: 100px;
+  }
+
+  .content .imgBox img {
+    max-width: 300px;
+  }
+
+  .thumb {
+    position: absolute;
+    left: 50%;
+    bottom: -550px;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .thumb li:hover {
+    transform: translateY(-15px);
+  }
+
+  .thumb li img {
+    max-width: 70px;
+  }
+
+  .sci {
+    top: 125%;
+    right: 5px;
+  }
+
+  .sci li a {
+    filter: invert(0);
+  }
+
+  .sci li a:hover {
+    transform: translateY(-1px);
+    color: black;
+  }
+
+  .circle {
+    width: 0;
+    height: 0;
+  }
+
+  .lermais__link {
+    font-size: 1em;
+  }
+
+  .lermais__agradecimento {
+    margin-top: 2%;
+  }
+
+  .lermais__agradecimento span {
+    font-size: 16px;
     color: #017143;
     font-weight: 600;
   }
